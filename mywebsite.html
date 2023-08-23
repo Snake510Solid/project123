@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@mywebsite</title>
+    <link href="./helps/assets/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css" rel="stylesheet">
+    <link href="./helps/assets/bootstrap-icons-1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="./css/mywebsite.css" rel="stylesheet">
+    </link>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <nav class="abc navbar navbar-expand-lg fixed-top text-uppercase">
+        <div class="container">
+            <a class="navbar-brand">NAV</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <div class="navbar-nav">
+                    <a class="nav-link px-lg-4 rounded" href="#">Home</a>
+                    <a class="nav-link px-lg-4 rounded" href="#">Carousel</a>
+                    <a class="nav-link px-lg-4 rounded" href="#">Pricing</a>
+                    <a class="nav-link px-lg-4 rounded" href="#">Accordion</a>
+                    <a class="nav-link px-lg-4 rounded" href="#">Portfolio</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- MAIN SECTION -->
+    <section class="main-swiper py-5">
+        <div class="container py-3">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card w-100 border-0 rounded-0"
+                            style="background-image:url(./resources/ptf/4x3_two_cups_mockup.webp);background-size: cover;">
+                            <div class="d-flex bg-opacity-25 justify-content-center align-items-end"
+                                style="height: 260px">
+                                <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                                    <p class="text-white fw-bold">Ice Cake</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card w-100 border-0 rounded-0"
+                            style="background-image:url(./resources/ptf/4x3_two_cups_mockup.webp) ;background-size: cover;">
+                            <div class="d-flex bg-opacity-25 justify-content-center align-items-end"
+                                style="height: 260px">
+                                <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                                    <p class="text-white fw-bold">Sweets</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card w-100 border-0 rounded-0"
+                            style="background-image:url(./resources/ptf/4x3_two_cups_mockup.webp) ;background-size: cover;">
+                            <div class="d-flex bg-opacity-25 justify-content-center align-items-end"
+                                style="height: 260px">
+                                <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                                    <p class="text-white fw-bold">Biscuits</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card w-100 border-0 rounded-0"
+                            style="background-image:url(./resources/ptf/4x3_two_cups_mockup.webp);background-size: cover;">
+                            <div class="d-flex bg-opacity-25 justify-content-center align-items-end"
+                                style="height: 260px">
+                                <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                                    <p class="text-white fw-bold">Ice Cream</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card w-100 border-0 rounded-0"
+                            style="background-image:url(./resources/ptf/4x3_two_cups_mockup.webp) ;background-size: cover;">
+                            <div class="d-flex bg-opacity-25 justify-content-center align-items-end"
+                                style="height: 260px">
+                                <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                                    <p class="text-white fw-bold">Chocolate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card w-100 border-0 rounded-0"
+                            style="background-image:url(./resources/ptf/4x3_two_cups_mockup.webp);background-size: cover;">
+                            <div class="d-flex bg-opacity-25 justify-content-center align-items-end"
+                                style="height: 260px">
+                                <div class="text-center pb-2 bg-dark w-100 pt-3 bg-opacity-75">
+                                    <p class="text-white fw-bold">Cake Rusk</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination py-5"></div>
+            </div>
+        </div>
+    </section>
+
+    <script src="./helps/assets/bootstrap-5.3.0-alpha1-dist/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            autoplay: true,
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+
+    <script src="./js/js.js"></script>
+
+</body>
+
+</html>
